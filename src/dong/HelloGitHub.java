@@ -11,6 +11,5 @@ public class HelloGitHub {
 		int i = 0b11111;
 		System.out.println(i);
 		System.out.println(i);
-		System.out.println("This is commit to GitHub");//dddd
 	}
 }
