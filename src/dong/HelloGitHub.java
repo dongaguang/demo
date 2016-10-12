@@ -11,5 +11,6 @@ public class HelloGitHub {
 		int i = 0b11111;
 		System.out.println(i);
 		System.out.println(i);
+		System.out.println(i);//123131231
 	}
 }
