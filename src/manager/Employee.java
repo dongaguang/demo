@@ -53,7 +53,14 @@ public class Employee {
 	}
 
 	public Date getHireDay() {
-		return hireDay;
+		/**
+		 * 这里这样写会有问题
+		 * 假如把Employee的一个实例的hireDay赋值给一个date对象
+		 * 然后修改这个date对象会引起Employee的这个实例的私有状态
+		 * 所以要返回hireDay.clone()(这个对象的副本)
+		 */
+//		return hireDay;
+		return (Date)hireDay.clone();
 	}
 
 	public void setHireDay(Date hireDay) {
