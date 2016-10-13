@@ -16,7 +16,7 @@ public class HelloGitHub {
 		HelloGitHub hg = new HelloGitHub(); 
 //		hg.getInfoWithIn();
 //		hg.operateFile();
-		hg.operateArray();
+//		hg.operateArray();
 	}
 	
 	/**
