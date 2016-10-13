@@ -1,21 +1,35 @@
 package dong;
 
+import java.io.Console;
+import java.util.Scanner;
+
 /**
  * Hello GitHub
  * @author Administrator
  *
  */
 public class HelloGitHub {
-	enum PokerColor{A,B}
 	public static void main(String[] args) {
-		final int S = 21;
-		System.out.println("This is commit to GitHub");
-		int i = 0b11111;//JDK1.7以后可以使用
-		System.out.println(i);
-		Double f = 4d;
-		System.out.println(Double.NaN);
-		char c = '\u005e';
-		System.out.println(Math.sqrt(f));
-		PokerColor pc = PokerColor.A;
+		HelloGitHub hg = new HelloGitHub(); 
+		hg.getInfoWithIn();
+	}
+	
+	/**
+	 * 获取标准输入的姓名和年龄，并输出
+	 */
+	private void getInfoWithIn(){
+		System.out.println("please enter you name:");
+		Scanner sc = new Scanner(System.in);
+		String name = sc.nextLine();
+		System.out.println("please enter you age:");
+		String age = sc.nextLine();
+		System.out.println("Hello " + name + ",your age is:" + age);
+		
+		/**
+		 * Console只能用在标准输入、输出流未被重定向的原始控制台中使用
+		 */
+//		Console sc = System.console();
+//		char[] pass = sc.readPassword();
+//		System.out.println(pass.toString());
 	}
 }
