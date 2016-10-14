@@ -9,6 +9,13 @@ import java.text.ParseException;
  */
 public class Manager extends Employee {
 	private double bonus;//奖金
+	
+	public static void main(String[] args) throws ParseException {
+		Manager m = new Manager("dong", 10000, 1993, 7, 22);
+		System.out.println(m.getSalary());
+		m.setBonus(1000);
+		System.out.println(m.getSalary());
+	}
 
 	/**
 	 * 子类的构造器必须要调用父类的构造器
@@ -22,7 +29,7 @@ public class Manager extends Employee {
 	public Manager(String n, double s, int year, int month, int day) throws ParseException {
 		super(n, s, year, month, day);
 	}
-
+	
 	public double getBonus() {
 		return bonus;
 	}
@@ -32,7 +39,8 @@ public class Manager extends Employee {
 	}
 	
 	public double getSalary(){
-		return salary;
+		double salary = super.getSalary();
+		return salary + bonus;
 	}
 
 }
