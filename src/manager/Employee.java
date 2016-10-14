@@ -24,7 +24,6 @@ public class Employee {
 		this.name = n;
 		this.salary = s;
 		Calendar calendar = new GregorianCalendar(year, month, day);
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 		this.hireDay = calendar.getTime();
 	}
 	
