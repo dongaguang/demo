@@ -4,8 +4,6 @@ import java.text.DateFormatSymbols;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
-import javax.print.CancelablePrintJob;
-
 /**
  * 日期类
  * @author 董书广
