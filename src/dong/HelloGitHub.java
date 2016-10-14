@@ -3,7 +3,10 @@ package dong;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.nio.file.Paths;
+import java.text.NumberFormat;
+import java.text.ParseException;
 import java.util.Arrays;
+import java.util.Locale;
 import java.util.Scanner;
 
 /**
@@ -12,11 +15,16 @@ import java.util.Scanner;
  *
  */
 public class HelloGitHub {
-	public static void main(String[] args) throws IOException {
-		HelloGitHub hg = new HelloGitHub(); 
+	public static void main(String[] args) throws IOException, ParseException {
+//		HelloGitHub hg = new HelloGitHub(); 
 //		hg.getInfoWithIn();
 //		hg.operateFile();
 //		hg.operateArray();
+//		double x = 0.11;
+//		NumberFormat nf = NumberFormat.getCurrencyInstance();
+//		System.out.println(nf.format(x));
+		NoMainMethod nmm = new NoMainMethod();
+		nmm.speak();
 	}
 	
 	/**
