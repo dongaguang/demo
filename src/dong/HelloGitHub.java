@@ -23,8 +23,12 @@ public class HelloGitHub {
 //		double x = 0.11;
 //		NumberFormat nf = NumberFormat.getCurrencyInstance();
 //		System.out.println(nf.format(x));
-		NoMainMethod nmm = new NoMainMethod();
-		nmm.speak();
+//		NoMainMethod nmm = new NoMainMethod();
+//		nmm.speak();
+		HelloGitHub db = new HelloGitHub();
+		if(db instanceof HelloGitHub){
+			System.out.println("db 是 HelloGitHub类的一个实例");
+		}
 	}
 	
 	/**
