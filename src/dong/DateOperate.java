@@ -4,6 +4,8 @@ import java.text.DateFormatSymbols;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
+import exp.BaseException;
+
 /**
  * 日期类
  * @author 董书广
@@ -29,13 +31,15 @@ public class DateOperate {
 	
 	/**
 	 * some operate
+	 * @throws Exception 
 	 */
-	private void someOperate(){
+	public void someOperate() throws Exception{
 		Calendar cl = Calendar.getInstance();
 		int month = cl.get(5);
 		for(int i = 0; i< 17;i++){
 			System.out.println(cl.get(i));
 		}
+		throw new BaseException("哈哈哈");
 	}
 	
 	/**

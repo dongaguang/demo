@@ -16,15 +16,21 @@ import java.util.Scanner;
  */
 public class HelloGitHub {
 	public static void main(String[] args) throws IOException, ParseException {
-//		HelloGitHub hg = new HelloGitHub(); 
+		HelloGitHub hg = new HelloGitHub(); 
 //		hg.getInfoWithIn();
 //		hg.operateFile();
 //		hg.operateArray();
 //		double x = 0.11;
 //		NumberFormat nf = NumberFormat.getCurrencyInstance();
 //		System.out.println(nf.format(x));
-		NoMainMethod nmm = new NoMainMethod();
-		nmm.speak();
+//		NoMainMethod nmm = new NoMainMethod();
+//		nmm.speak();
+		System.out.println(hg.haha(17));
+	}
+	
+	public static int haha(int a){
+		Integer.parseInt(a+ "",16);
+		return a;
 	}
 	
 	/**
