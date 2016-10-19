@@ -8,5 +8,9 @@ public class ExpOperate {
 		//激活全局日志记录器
 		Logger.getGlobal().setLevel(Level.INFO);
 		Logger.getGlobal().info("hehe");
+		Logger.getGlobal().info("hehe");
+		Logger.getGlobal().info("hehe");
+		Logger.getGlobal().info("hehe");
+		Logger.getGlobal().info("hehe");
 	}
 }
