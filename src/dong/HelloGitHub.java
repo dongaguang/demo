@@ -25,12 +25,6 @@ public class HelloGitHub {
 //		System.out.println(nf.format(x));
 //		NoMainMethod nmm = new NoMainMethod();
 //		nmm.speak();
-		System.out.println(hg.haha(17));
-	}
-	
-	public static int haha(int a){
-		Integer.parseInt(a+ "",16);
-		return a;
 	}
 	
 	/**
