@@ -9,8 +9,15 @@ import java.util.BitSet;
  */
 public class FindPrimeNumber {
 	public static void main(String[] args) {
-		FindPrimeNumber fpn = new FindPrimeNumber();
-		fpn.findPrime(5);
+//		FindPrimeNumber fpn = new FindPrimeNumber();
+//		fpn.findPrime(5);
+		for (int i = 2; i < 10; i++) {
+			for(int j = 2; j < i; j++){
+				if(i % j == 0){
+					System.out.println(i);
+				}
+			}
+		}
 	}
 
 	private void findPrime(int n){
