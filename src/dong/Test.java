@@ -36,7 +36,7 @@ public class Test {
             System.out.println(str);
             System.out.println(formatter.format(date));
             return str.equals(formatter.format(date));  
-        }catch(Exception e){ 
+        }catch(Exception e){//抛异常说明不是日期类型的字符串
             return false;  
         }  
     }
