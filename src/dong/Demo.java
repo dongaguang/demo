@@ -1,8 +1,11 @@
 package dong;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
 
 /**
  * 遍历List的过程中remove元素
@@ -11,6 +14,41 @@ import java.util.List;
  */
 public class Demo {
 	public static void main(String[] args) {
+		Demo d = new Demo();
+		d.hashMap();
+	}
+	
+	public void hashMap(){
+		Map<String,String> test = new HashMap<String,String>();
+		test.put("1", "a");
+		test.put("2", "b");
+		test.put("3", "c");
+		test.put("4", "d");
+		test.put("5", "e");
+//		//第一种遍历
+//		for(String s: test.keySet()){
+//			System.out.println("key:" + s + "value:" + test.get(s));
+//		}
+//		//第二种遍历:遍历value,只能遍历value
+//		for(String s: test.values()){
+//			System.out.println("value:" + s);
+//		}
+//		//第三种
+//		for(Entry<String, String> en:test.entrySet()){
+//			System.out.println(en.getKey() + "---" + en.getValue());
+//		}
+		//第四种
+		Iterator<Entry<String, String>> it = test.entrySet().iterator();
+		while(it.hasNext()){
+			Entry<String, String> en = it.next();
+			System.out.println("key:" + en.getKey() + "value:" + en.getValue());
+		}
+	}
+	
+	/**
+	 * 遍历List
+	 */
+	public void list(){
 		List<String> list = new ArrayList<String>();
 		list.add("1");
 		list.add("2");
