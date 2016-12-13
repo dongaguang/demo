@@ -15,7 +15,7 @@ import java.util.Map.Entry;
 public class Demo {
 	public static void main(String[] args) {
 		Demo d = new Demo();
-		d.hashMap();
+		d.list();
 	}
 	
 	public void hashMap(){
